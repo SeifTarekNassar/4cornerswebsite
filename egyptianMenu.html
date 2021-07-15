@@ -1,0 +1,161 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus</title>
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Nunito|Spicy+Rice&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="includes/styles.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <main>
+        <section id="egy-page">
+            <div class="nav-slider">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <header class="title-background">
+                <h2 class="title">Welcome to <span class="s1-egyptian">Egyptian</span><span class="s2-egyptian">
+                        C</span><span class="s3-egyptian">orner</span></h2>
+            </header>
+        </section>
+        <!--this section is for the nav-slider-->
+        <section class="nav-slider-section">
+            <button class="close-nav-slider">X</button>
+            <section class="nav-links-container">
+                <ul>
+                    <li>
+                        <a class="nav-links" href="#egy-menu">Menu</a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="asianMenu.html"><span class="s1-asian">Asian</span><span
+                                class="s2-asian"> C</span><span class="s3-asian">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="indianMenu.html"><span class="s1-indian">Indian</span> <span
+                                class="s2-indian">C</span><span class="s3-indian">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="italianMenu.html"><span class="s1-italy">Italian</span> <span
+                                class="s2-italy">C</span><span class="s3-italy">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="Home.php">Home</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <!--MENU-->
+        <section id="egy-menu" class="menu">
+            <h2 class="menu-title">***<span class="s1-egyptian">قائمة</span> <span class="s3-egyptian">المطعم</span>***
+            </h2>
+            <section class="tabs-container">
+                <section class="tabs">
+                    <!--because when user clicks we want to know what tab they are on right therfore we giave them attributes with values
+                    to be able to grab them in jsso that we can tell what tab they clicked on and active tab class will let us know what tab we are currently on
+                therfore we will write a generic function line instead of writing a line for each section-->
+                    <button class="tabHeader active-tab" data-tab="1">Appetizers</button>
+                    <button class="tabHeader" data-tab="2">Drinks</button>
+                    <button class="tabHeader" data-tab="3">Main Dishes</button>
+                    <button class="tabHeader" data-tab="4">Desserts</button>
+                </section>
+                <!--Actual section for each tab like the items in each menu, first tab will be show by default other will be hide-->
+                <section id="tabSection-1" class="tabSection show-tab">
+                    <p>1. Baladi Green Salad
+                        <span class="description">{ A plain salad }</span>
+                        <span class="menu-price">7.50 EGP</span></p>
+                    <p>2. Baba Ghanoug
+                        <span class="description">{ A salad made of tehina with special leafs }</span>
+                        <span class="menu-price">10.25 EGP</span></p>
+                    <p>3. Hummus
+                        <span class="description">{ smooth thick mixture of mashed chickpeas, tahini, oil, lemon juice,
+                            and
+                            garlic, used especially as a dip for pita }</span>
+                        <span class="menu-price">16.00 EGP</span></p>
+                    <p>4. Pickled Eggplant
+                        <span class="description">{ marinated eggplant kept under oil, flavored with garlic and oregano
+                            }</span>
+                        <span class="menu-price">6.75 EGP</span></p>
+                </section>
+                <section id="tabSection-2" class="tabSection hide-tab">
+                    <p>1. Egyptian Coffee
+                        <span class="description">{ A cup of coffee boiled in water }</span>
+                        <span class="menu-price">7.50 EGP</span></p>
+                    <p>2. Egyptian Tea
+                        <span class="description">{ A cup of tea with added mint leafs }</span>
+                        <span class="menu-price">5 EGP</span></p>
+                    <p>3. Sugar Cane
+                        <span class="description">{ A traditional Egyptian drink made out of sugar cane }</span>
+                        <span class="menu-price">3.50 EGP</span></p>
+                    <p>4. Tamr Hindi
+                        <span class="description">{ A sour, chilled drink made from tamarind }</span>
+                        <span class="menu-price">5.00 EGP</span></p>
+                </section>
+                <section id="tabSection-3" class="tabSection hide-tab">
+
+                    <p>1. Egg with Pastrami
+                        <span class="description">{ Fried eggs with the special Pastrami }</span>
+                        <span class="menu-price">13.00 EGP</span></p>
+
+                    <p>2. Falafel
+                        <span class="description">{ A deep-fried ball or patty that is made from chickpeas or fava beans
+                            and
+                            spices }</span>
+                        <span class="menu-price">10.00 EGP</span></p>
+                    <p>3. Foul with Olives Oil
+                        <span class="description">{ Stewed fava beans, typically seasoned with a little ground cumin and
+                            finished with good extra virgin olive oil }</span>
+                        <span class="menu-price">15.00 EGP</span></p>
+                    <p>4. Mix Grill
+                        <span class="description">{ Chicken breast, shish tawook, grilled kofta, bread, BBQ sauce
+                            }</span>
+                        <span class="menu-price">200.00 EGP</span></p>
+
+                </section>
+                <section id="tabSection-4" class="tabSection hide-tab">
+                    <p>1. Amar El Deen
+                        <span class="description">{ An apricot juice or nectar beverage }</span>
+                        <span class="menu-price">14.00 EGP</span></p>
+
+                    <p>2. Balah
+                        <span class="description">{ Egyptian finger food, made from deep fried vanilla }</span>
+                        <span class="menu-price">15.00 EGP</span></p>
+                    <p>3. Katayef
+                        <span class="description">{ Egyptian dumblings fried in oil, filled with nuts }</span>
+                        <span class="menu-price">20.00 EGP</span></p>
+                    <p>4. Konafa
+                        <span class="description">{ Thin noodle-like pastry, or alternatively fine semolina dough,
+                            soaked in
+                            sweet, sugar-based syrup, layered with cheese }</span>
+                        <span class="menu-price">16.00 EGP</span></p>
+                </section>
+            </section>
+            <!--Restaurant Info-->
+            <section id="restaurant-info-egypt">
+                <section class="info-container">
+                    <section class="address-content">
+                        <h2 class="restaurant-info-title egy-title">Address</h2>
+                        <p class="address egy-address">11 Klot Baik</p>
+                        <p class="address egy-address">Al-azbaikia, Cairo</p>
+                    </section>
+                    <section class="business-hours egy-business-hours">
+                        <h2 class="restaurant-info-title egy-title">Business Hours</h2>
+                        <p class="hours egy-working-hours">Sunday-Thursday: 9am-9pm</p>
+                        <p class="hours egy-working-hours">Friday-Saturday: 9am-12am</p>
+                    </section>
+                    <section class="contact-content egy-contact-content">
+                        <h2 class="restaurant-info-title egy-contact">Pick Up</h2>
+                        <p class="phone egy-contact">Call Us: 0105561134</p>
+                    </section>
+                </section>
+            </section>
+    </main>
+    <script src="includes/test.js" ></script>
+</body>
+
+</html>

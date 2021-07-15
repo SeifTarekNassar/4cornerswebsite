@@ -1,0 +1,172 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus</title>
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Nunito|Spicy+Rice&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="includes/styles.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <main>
+        <section id="asia-page">
+            <div class="nav-slider">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <header class="title-background">
+                <h2 class="title">Welcome to <span class="s2-asian">Asian</span><span class="s1-asian"> C</span><span
+                        class="s3-italy">orner</span></h2>
+            </header>
+        </section>
+        <!--this section is for the nav-slider-->
+        <section class="nav-slider-section">
+            <button class="close-nav-slider">X</button>
+            <section class="nav-links-container">
+                <ul>
+                    <li>
+                        <a class="nav-links" href="#asian-menu">Menu</a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="egyptianMenu.html"><span class="s1-asian">Egyptian</span><span
+                                class="s3-egyptian"> C</span><span class="s2-egyptian">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="indianMenu.html"><span class="s1-indian">Indian</span> <span
+                                class="s2-indian">C</span><span class="s3-indian">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="italianMenu.html"><span class="s1-italy">Italian</span> <span
+                                class="s2-italy">C</span><span class="s3-italy">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="Home.php">Home</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <!--MENU-->
+        <section id="asian-menu" class="menu">
+            <h2 class="menu-title ">***<span class="s2-asian">M</span>enyu***</h2>
+            <section class="tabs-container ">
+                <section class="tabs">
+                    <!--because when user clicks we want to know what tab they are on right therfore we giave them attributes with values
+                    to be able to grab them in jsso that we can tell what tab they clicked on and active tab class will let us know what tab we are currently on
+                therfore we will write a generic function line instead of writing a line for each section-->
+                    <button class="tabHeader active-tab" data-tab="1">Appetizers</button>
+                    <button class="tabHeader" data-tab="2">Drinks</button>
+                    <button class="tabHeader" data-tab="3">Main Dishes</button>
+                    <button class="tabHeader" data-tab="4">Desserts</button>
+                </section>
+                <!--Actual section for each tab like the items in each menu, first tab will be show by default other will be hide-->
+                <section id="tabSection-1" class="tabSection show-tab">
+
+                    <p>1.Calamari Shantong
+                        <span class="description">{ Spicy fried calamari in spicy garlic flavor }</span>
+                        <span class="menu-price">400¥</span></p>
+                    <p>2. Chicken Satay
+                        <span class="description">{ 4 pieces, 1 skewer, grilled chicken skewer, peanut sauce }</span>
+                        <span class="menu-price">250¥</span></p>
+
+
+                    <p>3. Samosa (V)
+
+                        <span class="description">{ 5 pieces of mashed potatoes with vegetables in curry flavor wrapped
+                            in
+                            fried dough }</span>
+                        <span class="menu-price">350¥</span></p>
+
+                    <p>4.Wonton
+                        <span class="description">{ 8 pieces of fried dough stuffed with beef & vegetables }</span>
+                        <span class="menu-price">400¥</span></p>
+
+                </section>
+                <section id="tabSection-2" class="tabSection hide-tab">
+
+                    <p>1.Mango Juice
+                        <span class="menu-price">150¥</span></p>
+                    <p>2. Passion Fruit Juice
+
+                        <span class="menu-price">150¥</span></p>
+
+
+                    <p>3. Plum Juice
+
+                        <span class="menu-price">150¥</span></p>
+
+                    <p>4.Wintermelon Juice
+
+                        <span class="menu-price">150¥</span></p>
+
+                </section>
+                <section id="tabSection-3" class="tabSection hide-tab">
+                    <p>1.Chicken Sechuan
+                        <span class="description">{ Spicy fried chicken pieces with vegetables in sechuan sauce}</span>
+                        <span class="menu-price">750¥</span></p>
+                    <p>2. Sushi
+                        <span class="description">{ 100 pieces offer }</span>
+                        <span class="menu-price">2500¥</span></p>
+
+
+                    <p>3. Thai Red Curry Beef
+
+                        <span class="description">{ Spicy beef slices cooked in Thai red curry with coconut milk and
+                            bamboo
+                            shoots }</span>
+                        <span class="menu-price">850¥</span></p>
+
+                    <p>4.Yaki Tori
+                        <span class="description">{ Grilled chicken in teriyaki sauce }</span>
+                        <span class="menu-price">675¥</span></p>
+                </section>
+                <section id="tabSection-4" class="tabSection hide-tab">
+                    <p>1. Banana And Chocolate Spring Rolls with Ice Cream
+                        <span class="menu-price">350¥</span></p>
+
+                    <p>2. Fried Banana with Ice Cream
+                        <span class="menu-price">350¥</span></p>
+                    <p>3. Fried Pineapple with Ice Cream
+
+                        <span class="menu-price">450¥</span></p>
+
+
+                    <p>4. Pumpkin Japanese Style
+
+                        <span class="menu-price">250¥</span></p>
+
+                    <p>4.Wintermelon Juice
+
+                        <span class="menu-price">150¥</span></p>
+                    <span class="description">{ Grilled chicken in teriyaki sauce }</span>
+                    <span class="menu-price">675¥</span></p>
+                </section>
+            </section>
+            <!--Restaurant Info-->
+            <section id="restaurant-info-asia">
+                <section class="info-container">
+                    <section class="address-content">
+                        <h2 class="restaurant-info-title">Address</h2>
+                        <p class="address">カナガワケン, ヒラツカシ, クリョウヅツミ, 425-1298
+                            <p class="address">425-1298, Kuryozutsumi, Hiratsuka-shi, Kanagawa</p>
+                    </section>
+                    <section class="business-hours">
+                        <h2 class="restaurant-info-title">Business Hours</h2>
+                        <p class="hours">Monday-Friday: 9am-3pm</p>
+                        <p class="hours">Saturday-Sunday: 5pm-12am</p>
+                    </section>
+                    <section class="contact-content">
+                        <h2 class="restaurant-info-title">Pick Up</h2>
+                        <p class="phone">Call Us: +8142-632-3082</p>
+                    </section>
+                </section>
+            </section>
+    </main>
+     <script src="includes/test.js" ></script>
+</body>
+
+</html>

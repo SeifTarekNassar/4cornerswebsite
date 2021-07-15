@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus</title>
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Nunito|Spicy+Rice&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+      <link rel="stylesheet" href="includes/styles.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <main>
+        <section id="india-page">
+            <div class="nav-slider">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <header class="title-background">
+                <h2 class="title">Welcome to <span class="s1-indian">Indian</span><span class="s2-indian"> C</span><span
+                        class="s3-indian">orner</span></h2>
+            </header>
+        </section>
+        <!--this section is for the nav-slider-->
+        <section class="nav-slider-section">
+            <button class="close-nav-slider">X</button>
+            <section class="nav-links-container">
+                <ul>
+                    <li>
+                        <a class="nav-links" href="#indian-menu">Menu</a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="asianMenu.html"><span class="s1-asian">Asian</span><span
+                                class="s2-asian"> C</span><span class="s3-asian">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="egyptianMenu.html"><span class="s1-egyptian">Egyptian</span> <span
+                                class="s3-egyptian">C</span><span class="s2-egyptian">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="italianMenu.html"><span class="s1-italy">Italian</span> <span
+                                class="s2-italy">C</span><span class="s3-italy">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="Home.html">Home</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <!--MENU-->
+        <section id="indian-menu" class="menu">
+            <h2 class="menu-title"><span class="s1-indian">***</span><span class="s1-indian">H</span>amaare <span
+                    class="s3-indian">M</span>enoo<span class="s1-indian">***</span></h2>
+            <section class="tabs-container">
+                <section class="tabs">
+                    <!--because when user clicks we want to know what tab they are on right therfore we giave them attributes with values
+                    to be able to grab them in jsso that we can tell what tab they clicked on and active tab class will let us know what tab we are currently on
+                therfore we will write a generic function line instead of writing a line for each section-->
+                    <button class="tabHeader active-tab" data-tab="1">Appetizers</button>
+                    <button class="tabHeader" data-tab="2">Soups</button>
+                    <button class="tabHeader" data-tab="3">Main Dishes</button>
+                    <button class="tabHeader" data-tab="4">Desserts</button>
+                </section>
+                <!--Actual section for each tab like the items in each menu, first tab will be show by default other will be hide-->
+                <section id="tabSection-1" class="tabSection show-tab">
+                    <p>1. Chicken Samosa
+                        <span class="description">{ Crispy pastry filled with mince chicken }</span>
+                        <span class="menu-price">Rs. 230</span></p>
+                    <p>2. Karak Roll
+                        <span class="description">{Crispy chicken roll filled with cheddar cheese }</span>
+                        <span class="menu-price">Rs. 250</span></p>
+                    <p>3. Masala Papad
+                        <span class="description">{ Crispy Thai papadium topping with chopped tomato, onion and cucumber
+                            }</span>
+                        <span class="menu-price">Rs. 180</span></p>
+                    <p>4. Vegetables Papad Roll
+                        <span class="description">{ Crispy papadium rolls filled with vegetables }</span>
+                        <span class="menu-price">Rs. 195</span></p>
+                </section>
+                <section id="tabSection-2" class="tabSection hide-tab">
+                    <p>1. Chicken
+                        <span class="description">{ Indian style chicken soup with fresh herbs }</span>
+                        <span class="menu-price">Rs. 180</span></p>
+                    <p>2. Lentil
+                        <span class="description">{Famous Indian soup }</span>
+                        <span class="menu-price">Rs. 200</span></p>
+                    <p>3. Mushroom
+                        <span class="description">{ With Indian Herbs }</span>
+                        <span class="menu-price">Rs. 150</span></p>
+                    <p>4. Tomato
+                        <span class="description">{ With fresh coriander }</span>
+                        <span class="menu-price">Rs. 135</span></p>
+                </section>
+                <section id="tabSection-3" class="tabSection hide-tab">
+                    <p>1. Fish Tikka
+                        <span class="description">{ Boneless cubes in fresh hamour with Indian spices and grilled in
+                            tandoor
+                            }</span>
+                        <span class="menu-price">Rs. 450</span></p>
+                    <p>2. Keema Aloo
+                        <span class="description">{Minced meat with potato and Indian spices }</span>
+                        <span class="menu-price">Rs. 380</span></p>
+                    <p>3. Ran Maharaja
+                        <span class="description">{ A pieces from a baby lamb leg marinate in a mixture of Indian spices
+                            cooked
+                            in 4 hour on law tempered fire }</span>
+                        <span class="menu-price">Rs. 450</span></p>
+                    <p>4. Tandoori Chicken
+                        <span class="description">{ Well known Indian delicacy chicken marinate in yogurt, ginger,
+                            garlic
+                            paste, garam masala grilled in tandoor }</span>
+                        <span class="menu-price">Rs. 450</span></p>
+                </section>
+                <section id="tabSection-4" class="tabSection hide-tab">
+                    <p>1. Coconut Ice Cream
+                        <span class="description">{ A coconut opened and filled with ice cream }</span>
+                        <span class="menu-price">Rs. 150</span></p>
+                    <p>2. Gulab Jamun
+                        <span class="description">{ Indian Dumplings }</span>
+                        <span class="menu-price">Rs. 125</span></p>
+                    <p>3. Kajarka Halwa
+                        <span class="description">{ Indian style carrot pudding with nuts }</span>
+                        <span class="menu-price">Rs. 170</span></p>
+                    <p>4. Masala Chai
+                        <span class="description">{ A speical tea filled with leafs }</span>
+                        <span class="menu-price">Rs. 110</span></p>
+                </section>
+            </section>
+            <!--Restaurant Info-->
+            <section id="restaurant-info-india">
+                <section class="info-container">
+                    <section class="address-content">
+                        <h2 class="restaurant-info-title">Address</h2>
+                        <p class="address">D-842, New Friend</p>
+                        <p class="address"> New Delhi, Delhi</p>
+                    </section>
+                    <section class="business-hours">
+                        <h2 class="restaurant-info-title">Business Hours</h2>
+                        <p class="hours">Sunday-Thursday: 9am-9pm</p>
+                        <p class="hours">Friday-Saturday: 9am-12am</p>
+                    </section>
+                    <section class="contact-content">
+                        <h2 class="restaurant-info-title">Pick Up</h2>
+                        <p class="phone">Call Us: 01141634198</p>
+                    </section>
+                </section>
+            </section>
+    </main>
+   <script src="includes/test.js" ></script>
+</body>
+
+</html>

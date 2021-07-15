@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menus</title>
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Nunito|Spicy+Rice&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="includes/styles.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <main>
+        <section id="italy-page">
+            <div class="nav-slider">
+                <div class="line"></div>    
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <header class="title-background">
+                <h2 class="title">Welcome to <span class="s1-italy">Italy</span><span class="s2-italy"> C</span><span
+                        class="s3-italy">orner</span></h2>
+            </header>
+        </section>
+        <!--THIS SECTION IS FOR THE NAV-SLIDER MENU ITALY-->
+        <section class="nav-slider-section">
+            <button class="close-nav-slider">X</button>
+            <section class="nav-links-container">
+                <ul>
+                    <li>
+                        <a class="nav-links" href="#">Menu</a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="asianMenu.html"><span class="s1-asian">Asian</span><span
+                                class="s2-asian"> C</span><span class="s3-asian">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="indianMenu.html"><span class="s1-indian">Indian</span> <span
+                                class="s2-indian">C</span><span class="s3-indian">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="egyptianMenu.html"><span class="s1-egyptian">Egyptian</span> <span
+                                class="s3-egyptian">C</span><span class="s2-egyptian">orner</span></a>
+                    </li>
+                    <li>
+                        <a class="nav-links" href="Home.php">Home</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <!--END OF NAV SLIDER-->
+        <!--MENU-->
+        <section id="italian-menu" class="menu">
+            <h2 class="menu-title"><span class="s1-italy"> ***</span><span class="s1-italy">I</span>l <span
+                    class="s2-italy"> N</span>ostro <span class="s3-italy">M</span>enu<span class="s1-italy">***</span>
+            </h2>
+            <section class="tabs-container">
+                <section class="tabs">
+                    <!--because when user clicks we want to know what tab they are on right therfore we giave them attributes with values
+                    to be able to grab them in jsso that we can tell what tab they clicked on and active tab class will let us know what tab we are currently on
+                therfore we will write a generic function line instead of writing a line for each section-->
+                    <button class="tabHeader active-tab" data-tab="1">Appetizers</button>
+                    <button class="tabHeader" data-tab="2">Drinks</button>
+                    <button class="tabHeader" data-tab="3">Main Dishes</button>
+                    <button class="tabHeader" data-tab="4">Desserts</button>
+                </section>
+                <!--Actual section for each tab like the items in each menu, first tab will be show by default other will be hide-->
+                <section id="tabSection-1" class="tabSection show-tab">
+                    <p>1. Caprese Salad
+                        <span class="description">{ Fresh Mozarella with Tomato, Pesto and Bail }</span>
+                        <span class="menu-price">7.50€</span></p>
+
+                    <p>2. Garlic Bread
+                        <span class="description">{ With Cheese }</span>
+                        <span class="menu-price">2.99€</span></p>
+                    <p>3. Mozzarela Sticks
+                        <span class="description">{ 6 Pieces With Marinara }</span>
+                        <span class="menu-price">6.99€</span></p>
+
+                    <p>4. Pepperoni Rolls
+                        <span class="description">{ With Marinara }</span>
+                        <span class="menu-price">3.99€</span></p>
+
+                </section>
+                <section id="tabSection-2" class="tabSection hide-tab">
+                    <p>1. Corvina House Red
+                        <span class="description">{ Barnsworth Shiraz Cabernet }(Price Per Bottle)</span>
+                        <span class="menu-price">42.00€</span></p>
+                    <p>2. Elephant In The Room Merlot
+                        <span class="description"> (Price Per Bottle)</span>
+                        <span class="menu-price">33.00€</span></p>
+                    <p>3. Mandaleto Nero D'Avola
+                        <span class="description">(Price Per Bottle)</span>
+                        <span class="menu-price">30.00€</span></p>
+                    <p>4. Sartoti Valpolicella
+                        <span class="description">(Price Per Bottle)</span>
+                        <span class="menu-price">42.00€</span></p>
+                </section>
+                <section id="tabSection-3" class="tabSection hide-tab">
+                    <p>1. Costata Di Manzo
+                        <span class="description">{ 6oz rib eye steak with sauteed potatoes celerlac puree and confit
+                            tennel
+                            }</span>
+                        <span class="menu-price">22.00€</span></p>
+                    <p>2. Nasell
+                        <span class="description">{ Fillet of hake with lemon and thyme potatoes asparagus and salsa
+                            Vierde }
+                        </span>
+                        <span class="menu-price">20.00€</span></p>
+                    <p>3. Pasta Terra Nero
+                        <span class="description">{ Sliced charizo, courgette, mushroom in a truffle parmesan sauce
+                            }</span>
+                        <span class="menu-price">18.00€</span></p>
+                    <p>4. Pizza Chicken Rustica
+                        <span class="description">{ Shredded chicken, roasted red peppers, red onions with basil, garlic
+                            and
+                            olive oil }</span>
+                        <span class="menu-price">15.99€</span></p>
+                </section>
+                <section id="tabSection-4" class="tabSection hide-tab">
+                    <p>1. Cannoli
+                        <span class="description">{ Consists of tube-shaped shells of fried pastry dough filled with a
+                            sweet,
+                            creamy filling usually containing ricotta }</span>
+                        <span class="menu-price">9.00€</span></p>
+                    <p>2. Panna Cotta
+                        <span class="description">{ An Italian Dessert of sweetened cream thickened with gelatin and
+                            molded,
+                            aromatized with coffee, vanilla } </span>
+                        <span class="menu-price">6.00€</span></p>
+                    <p>3. Tiramisu
+                        <span class="description">{ A coffee-flavoured Italian dessert made of ladyfingers dipped in
+                            coffee,
+                            layered with a whipped mixture of eggs,sugar and mascarpone cheese, flavoured with cocoa
+                            }</span>
+                        <span class="menu-price">11.00€</span></p>
+                    <p>4. Zuccotto
+                        <span class="description">{ A semi-frozen chilled dessert made with alchermes, cake and ince
+                            cream
+                            }</span>
+                        <span class="menu-price">9.99€</span></p>
+                </section>
+            </section>
+            <!--Restaurant Info-->
+            <section id="restaurant-info-italy">
+                <section class="info-container">
+                    <section class="address-content">
+                        <h2 class="restaurant-info-title">Address</h2>
+                        <p class="address">Via Galvani 47
+                            <p class="address">Sant , Roma</p>
+                    </section>
+                    <section class="business-hours">
+                        <h2 class="restaurant-info-title">Business Hours</h2>
+                        <p class="hours">Monday-Friday: 9am-3pm</p>
+                        <p class="hours">Saturday-Sunday: 5pm-12am</p>
+                    </section>
+                    <section class="contact-content">
+                        <h2 class="restaurant-info-title">Pick Up</h2>
+                        <p class="phone">Call Us: 0375 - 2202787</p>
+                    </section>
+                </section>
+            </section>
+    </main>
+    <!--main script-->
+ <script src="includes/test.js" ></script>
+</body>
+
+</html>
